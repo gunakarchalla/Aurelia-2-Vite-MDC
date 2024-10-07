@@ -1,0 +1,42 @@
+{
+  "name": "demo-app",
+  "description": "An Aurelia 2 client application.",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "???"
+  },
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@aurelia-mdc-web/all": "^9.2.3-au2",
+    "@aurelia/router": "latest",
+    "aurelia": "latest",
+    "aurelia-cli": "^3.0.3",
+    "gulp": "^5.0.0"
+  },
+  "devDependencies": {
+    "@aurelia/testing": "latest",
+    "@aurelia/vite-plugin": "latest",
+    "@types/node": "^20.16.10",
+    "@typescript-eslint/eslint-plugin": "^7.5.0",
+    "@typescript-eslint/parser": "^7.5.0",
+    "eslint": "^8.57.0",
+    "gulp-dart-sass": "^1.1.0",
+    "sass": "^1.77.3",
+    "stylelint": "^16.3.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "tslib": "^2.6.2",
+    "typescript": "~5.4.5",
+    "vite": "^5.2.12",
+    "vite-plugin-node-polyfills": "^0.22.0"
+  },
+  "scripts": {
+    "lint:js": "eslint src --ext .js,.ts",
+    "lint:css": "stylelint \"src/**/*.scss\"",
+    "lint": "npm run lint:js && npm run lint:css",
+    "pretest": "npm run lint",
+    "start": "vite",
+    "build": "vite build"
+  },
+  "type": "module"
+}

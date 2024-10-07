@@ -1,0 +1,10 @@
+@use './styles/body';
+
+@use '@material/theme' with (
+  $primary: #6200ee,
+  $secondary: #faab1a,
+  $background: #fff,
+);
+
+// all styles
+@use "@aurelia-mdc-web/all";
